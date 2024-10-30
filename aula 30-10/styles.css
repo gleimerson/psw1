@@ -1,0 +1,17 @@
+p {
+    background-color: blue;
+   
+}
+
+.c1 { 
+    background-color: brown;
+    text-align: center;
+    color: antiquewhite;
+}
+
+div { 
+
+    width: 100px;
+    height: 50px;
+    background-color: darkgreen;
+}
