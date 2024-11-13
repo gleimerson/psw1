@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #555;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+  }
+  
+  li a:hover {
+    background-color: #cf1212;
+  }
+  
+  
+  
+  
+
+  li:last-child {
+    border-right: none;
+  }
+ 
