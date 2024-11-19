@@ -66,6 +66,8 @@ input:focus, select:focus, textarea:focus {
     border-color:#141515;
     outline: none;
 }
+
+
 textarea {
     resize: vertical;
 }
