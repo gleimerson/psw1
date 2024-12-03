@@ -13,13 +13,21 @@ background: #d4d4d4;
 .cabecalho {
     background: rgb(23, 0, 139);
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
     border-radius: 8px; 
 }
-
+.cabecalho-img{
+position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-380%);
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+}
 .navegador {
     background-color: #333;
     padding: 0px;
@@ -49,15 +57,25 @@ background: #d4d4d4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
+h1 {
+    text-align: center;
+}
 
-.seção {
+.cadastro {
     max-width: 700px;
     margin: 30px auto;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border: none;
     
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .grupo {
@@ -66,6 +84,50 @@ background: #d4d4d4;
     padding: 20px;
     
 }
+.tabela {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color:blue ;
+    color: white;
+}
+
+input[type=text], input[type="email"], input[type="tel"], input[type="date"],select,textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
 
 .rodape{
     background: rgb(23, 0, 139);
