@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="cabecalho">
@@ -14,10 +14,11 @@
      
     <div class="navegador">
         <div class="navegador-lista">
+            
         <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cadaluno.html">CadAluno</a></li>
-                <li><a href="listaaluno.html">ListaAluno</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="cadaluno.php">CadAluno</a></li>
+                <li><a href="listaaluno.php">ListaAluno</a></li>
                 
             </ul>
         </div>

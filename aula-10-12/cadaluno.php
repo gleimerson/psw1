@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadAluno</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="cabecalho">
@@ -15,9 +15,9 @@
     <div class="navegador">
         <div class="navegador-lista">
         <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cadaluno.html">CadAluno</a></li>
-                <li><a href="listaaluno.html">ListaAluno</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="cadaluno.php">CadAluno</a></li>
+                <li><a href="listaaluno.php">ListaAluno</a></li>
                 
             </ul>
         </div>
@@ -25,33 +25,35 @@
 
     <div class="cadastro">
         <h1>Cadrastro do Aluno</h1>
+
+
       
-          
-            <div class="grupo">
+          <form action="listaaluno.php" method="post">
+            <div class="informacoes">
                 <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                <input type="hidden" id="custId" name="custId" value="3487">
+                <input type="text"  name="nome" placeholder="Digite seu nome completo" required>
+             
             </div>
 
-            <div class="grupo">
+            <div class="informacoes">
                 <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" required>
-                <input type="hidden" id="custId" name="custId" value="3487">  
+                <input type="text" name="endereco" placeholder="Digite seu Endereço" required>
+                  
             </div>
 
-            <div class="grupo">
+            <div class="informacoes">
                 <label for="bairro">Bairro:</label>
-                <input type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro" required>
+                <input type="text" name="bairro" placeholder="Digite seu Bairro" required>
                 <input type="hidden" id="custId" name="custId" value="3487">  
             </div>
 
-            <div class="grupo">
+            <div class="informacoes">
                 <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                <input type="text"  name="cidade" placeholder="Digite sua cidade" required>
                 <input type="hidden" id="custId" name="custId" value="3487">  
             </div>
 
-            <div class="grupo">
+            <div class="informacoes">
                 <label for="uf">UF:</label>
                 <select id="uf" name="uf" required>
                     <option value="">Selecione</option>
@@ -85,45 +87,57 @@
                 </select>
             </div>
 
-            <div class="grupo">
+            <div class="informacoes">
                  <label for="cpf">CPF:</label>
                 <input type="text" id="cpf" name="cpf"  placeholder="123.456.789-00">
                 <input type="hidden" id="custId" name="custId" value="3487">
              </div>
 
-             <div class="grupo">
+             <div class="informacoes">
                <label for="celular">Celular:</label>
                 <input type="tel" id="celular" name="celular"  placeholder="(99) 99999-9999">
                 <input type="hidden" id="custId" name="custId" value="3487">
              </div>
        
-             <div class="grupo">
+             <div class="informacoes">
              <label for="zap">WhatsApp:</label>
              <input type="tel" id="zap" name="zap"  placeholder="(99) 99999-9999">
              <input type="hidden" id="custId" name="custId" value="3487">
             </div>
 
-     <div>
+     <div class="informacoes">
         <label for="datanascimento">Data de Nascimento:</label>
         <input type="date" id="datanascimento" name="datanascimento" required>
         <input type="hidden" id="custId" name="custId" value="3487">
      </div>
 
-     <div>
+     <div class="informacoes">
         <label for="disciplinascursadas">Disciplinas Cursadas:</label>
-        <textarea id="disciplinascursadas" name="disciplinascursadas" rows="4" placeholder="Informe as disciplinas cursadas..."></textarea>
+        <textarea id="disciplinascursadas" name="disciplinascursadas"  placeholder="Informe as disciplinas cursadas..."></textarea>
         <input type="hidden" id="custId" name="custId" value="3487"> 
     </div>
 
-     <div>
-        <label for="disciplinaspreferidas">Disciplinas Preferidas:</label>
-        <textarea id="disciplinaspreferidas" name="disciplinaspreferidas" rows="4" placeholder="Informe suas disciplinas preferidas..."></textarea>
+     <div class="informacoes">
+        <label for="disciplinaspreferidas">Disciplinas Preferidas:</label><br>
+        <input type="checkbox" id="matematica" name="matematica" value="diciplina">
+        <label for="matematica"> Matemática</label>
+        <input type="checkbox" id="portugues" name="portugues" value="diciplina">
+        <label for="portugues"> Português</label>
+        <input type="checkbox" id="fisica" name="fisica" value="diciplina">
+        <label for="fisica"> Física</label>
+        
         <input type="hidden" id="custId" name="custId" value="3487"> 
     </div>
 
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Salvar">
 
+
+    </div>
+</form>
+
+    <div class="rodape">
+        <h2>Todos os direitos reservados - Gleimerson Rodrigo 2AII</h2>
 
     </div>
 </body>
