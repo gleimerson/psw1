@@ -112,9 +112,14 @@
      </div>
 
      <div class="informacoes">
-        <label for="disciplinascursadas">Disciplinas Cursadas:</label>
-        <textarea id="disciplinascursadas" name="disciplinascursadas"  placeholder="Informe as disciplinas cursadas..."></textarea>
-        <input type="hidden" id="custId" name="custId" value="3487"> 
+        <label for="disciplinascursadas">Disciplinas Cursadas:</label><br>
+        <input type="checkbox" id="matematica" name="matematica" value="diciplina">
+        <label for="matematica"> Matemática</label>
+        <input type="checkbox" id="portugues" name="portugues" value="diciplina">
+        <label for="portugues"> Português</label>
+        <input type="checkbox" id="fisica" name="fisica" value="diciplina">
+        <label for="fisica"> Física</label> 
+
     </div>
 
      <div class="informacoes">
@@ -125,8 +130,9 @@
         <label for="portugues"> Português</label>
         <input type="checkbox" id="fisica" name="fisica" value="diciplina">
         <label for="fisica"> Física</label>
+
         
-        <input type="hidden" id="custId" name="custId" value="3487"> 
+       
     </div>
 
 

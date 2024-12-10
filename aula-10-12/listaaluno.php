@@ -36,8 +36,7 @@
             <th>Celular</th>
             <th>WhatsApp</th>
             <th>Data de Nascimento</th>
-            <th>Disciplinas Cursadas</th>
-            <th>Disciplinas Preferidas</th>
+           
         </tr>
 
         <td>
@@ -70,10 +69,58 @@
             ?>
         </td>
 
-        
+        <td>
+            <?php
+             echo $_POST['cpf'];
+            ?>
+        </td>
+
+        <td>
+            <?php
+             echo $_POST['celular'];
+            ?>
+        </td>
+
+        <td>
+            <?php
+              echo $_POST['zap'];
+            ?>
+        </td>
+
+        <td>
+            <?php
+            echo $_POST['datanascimento'];
+            ?>
+        </td>     
         
     </div>
 </table>
+
+   <div class="tabela">
+<table>
+<tr>
+    <th>Disciplinas Cursadas</th>
+    <th>Disciplinas Preferidas</th>
+</tr>
+
+
+<td>
+            <?php
+            echo $_POST['disciplinascursadas'];
+            ?>
+        </td>
+
+        <td>
+            <?php
+            echo $_POST['disciplinaspreferidas'];
+            ?>
+        </td>
+    
+        
+</table>
+
+
+   </div>
 
 
 <div class="rodape">

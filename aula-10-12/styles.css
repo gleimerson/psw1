@@ -110,7 +110,7 @@ th {
     color: white;
 }
 
-input[type=text], input[type="email"], input[type="tel"], input[type="date"],select,textarea {
+input[type=text], input[type="email"], input[type="tel"], input[type="date"],select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
