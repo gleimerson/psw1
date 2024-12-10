@@ -27,32 +27,32 @@
         <h1>Cadrastro do Aluno</h1>
 
 
-      
-          <form action="listaaluno.php" method="post">
-            <div class="informacoes">
-                <label for="nome">Nome Completo:</label>
-                <input type="text"  name="nome" placeholder="Digite seu nome completo" required>
-             
-            </div>
+        <form action="listaaluno.php" method="post">
 
-            <div class="informacoes">
-                <label for="endereco">Endereço:</label>
-                <input type="text" name="endereco" placeholder="Digite seu Endereço" required>
-                  
-            </div>
+                <div class="informacoes">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text"  name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="informacoes">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" placeholder="Digite seu Endereço" required>
+                </div>
+          
+            
 
             <div class="informacoes">
                 <label for="bairro">Bairro:</label>
                 <input type="text" name="bairro" placeholder="Digite seu Bairro" required>
-                <input type="hidden" id="custId" name="custId" value="3487">  
+                  
             </div>
 
             <div class="informacoes">
                 <label for="cidade">Cidade:</label>
                 <input type="text"  name="cidade" placeholder="Digite sua cidade" required>
-                <input type="hidden" id="custId" name="custId" value="3487">  
-            </div>
+               </div>
 
+        
             <div class="informacoes">
                 <label for="uf">UF:</label>
                 <select id="uf" name="uf" required>
@@ -89,58 +89,66 @@
 
             <div class="informacoes">
                  <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf"  placeholder="123.456.789-00">
-                <input type="hidden" id="custId" name="custId" value="3487">
+                <input type="text" id="cpf" name="cpf"  placeholder="123.456.789-00" required>
+               
              </div>
 
              <div class="informacoes">
                <label for="celular">Celular:</label>
-                <input type="tel" id="celular" name="celular"  placeholder="(99) 99999-9999">
-                <input type="hidden" id="custId" name="custId" value="3487">
+                <input type="tel" id="celular" name="celular"  placeholder="(99) 99999-9999" required>
+             
              </div>
        
              <div class="informacoes">
              <label for="zap">WhatsApp:</label>
-             <input type="tel" id="zap" name="zap"  placeholder="(99) 99999-9999">
-             <input type="hidden" id="custId" name="custId" value="3487">
+             <input type="tel" id="zap" name="zap"  placeholder="(99) 99999-9999" required>
+            
             </div>
 
      <div class="informacoes">
         <label for="datanascimento">Data de Nascimento:</label>
         <input type="date" id="datanascimento" name="datanascimento" required>
-        <input type="hidden" id="custId" name="custId" value="3487">
+      
      </div>
 
      <div class="informacoes">
-        <label for="disciplinascursadas">Disciplinas Cursadas:</label><br>
-        <input type="checkbox" id="matematica" name="matematica" value="diciplina">
-        <label for="matematica"> Matemática</label>
-        <input type="checkbox" id="portugues" name="portugues" value="diciplina">
-        <label for="portugues"> Português</label>
-        <input type="checkbox" id="fisica" name="fisica" value="diciplina">
-        <label for="fisica"> Física</label> 
+    <label>Disciplinas Cursadas:</label><br>
+    <input type="checkbox" id="cursada-matematica" name="disciplinascursadas" value="Matemática" >
+    <label for="cursada-matematica">Matemática</label><br>
+    <input type="checkbox" id="cursada-portugues" name="disciplinascursadas" value="Português">
+    <label for="cursada-portugues">Português</label><br>
+    <input type="checkbox" id="cursada-fisica" name="disciplinascursadas" value="Física">
+    <label for="cursada-fisica">Física</label><br>
+    <input type="checkbox" id="cursada-psw" name="disciplinascursadas" value="PSW">
+    <label for="cursada-psw">PSW</label><br>
+    <input type="checkbox" id="cursada-asw" name="disciplinascursadas" value="ASW">
+    <label for="cursada-asw">ASW</label><br>
+    <input type="checkbox" id="cursada-quimica" name="disciplinascursadas" value="Química">
+    <label for="cursada-quimica">Química</label>
+</div>
 
-    </div>
-
-     <div class="informacoes">
-        <label for="disciplinaspreferidas">Disciplinas Preferidas:</label><br>
-        <input type="checkbox" id="matematica" name="matematica" value="diciplina">
-        <label for="matematica"> Matemática</label>
-        <input type="checkbox" id="portugues" name="portugues" value="diciplina">
-        <label for="portugues"> Português</label>
-        <input type="checkbox" id="fisica" name="fisica" value="diciplina">
-        <label for="fisica"> Física</label>
-
-        
-       
-    </div>
-
-
-        <input type="submit" value="Salvar">
+<div class="informacoes">
+    <label>Disciplina Preferida:</label><br>
+    <input type="radio" id="preferida-matematica" name="disciplinapreferida" value="Matemática" >
+    <label for="preferida-matematica">Matemática</label><br>
+    <input type="radio" id="preferida-portugues" name="disciplinaspreferidas" value="Português">
+    <label for="preferida-portugues">Português</label><br>
+    <input type="radio" id="preferida-fisica" name="disciplinapreferida" value="Física">
+    <label for="preferida-fisica">Física</label><br>
+    <input type="radio" id="preferida-psw" name="disciplinapreferida" value="PSW">
+    <label for="preferida-psw">PSW</label><br>
+    <input type="radio" id="preferida-asw" name="disciplinapreferida" value="ASW">
+    <label for="preferida-asw">ASW</label><br>
+    <input type="radio" id="preferida-quimica" name="disciplinapreferida" value="Química">
+    <label for="preferida-quimica">Química</label>
+</div>
 
 
-    </div>
+<input type="submit" value="Salvar">
+
 </form>
+
+</div>
 
     <div class="rodape">
         <h2>Todos os direitos reservados - Gleimerson Rodrigo 2AII</h2>
