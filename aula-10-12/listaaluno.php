@@ -36,8 +36,8 @@
             <th>Celular</th>
             <th>WhatsApp</th>
             <th>Data de Nascimento</th>
-           
-           
+           <th>disciplinascursadas</th>
+           <th>disciplinapreferida</th>
         </tr>
 
         <td>
@@ -92,24 +92,9 @@
             <?php
             echo $_POST['datanascimento'];
             ?>
-        </td>   
-        
-        
-    </div>
-</table>
+        </td>
 
-<table>
-    <div class="tabela">
-    
-    <tr>
-        
-      <th>Disciplinas Cursadas</th>
-      <th>Disciplina Preferida</th>
-     
-    </tr>
-
-
-     <td>
+        <td>
             <?php
             echo $_POST['disciplinascursadas'];
             ?>
@@ -119,10 +104,12 @@
             <?php
             echo $_POST['disciplinapreferida'];
             ?>
-        </td> 
-
+        </td>  
+        
+        
     </div>
 </table>
+
 
 
 <div class="rodape">
