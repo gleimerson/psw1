@@ -22,13 +22,14 @@
             </ul>
         </div>
     </div>
-
+     
     <div class="cadastro">
-        <h1>Cadrastro do Aluno</h1>
+       <h1>Cadrastro do Aluno</h1>
 
 
         <form action="listaaluno.php" method="post">
-
+ 
+        <div class="partes">
                 <div class="informacoes">
                     <label for="nome">Nome Completo:</label>
                     <input type="text"  name="nome" placeholder="Digite seu nome completo" required>
@@ -39,7 +40,7 @@
                     <input type="text" name="endereco" placeholder="Digite seu Endereço" required>
                 </div>
           
-            
+        </div>    
 
             <div class="informacoes">
                 <label for="bairro">Bairro:</label>
@@ -131,7 +132,7 @@
     <label>Disciplina Preferida:</label><br>
     <input type="radio" id="preferida-matematica" name="disciplinapreferida" value="Matemática" >
     <label for="preferida-matematica">Matemática</label><br>
-    <input type="radio" id="preferida-portugues" name="disciplinaspreferidas" value="Português">
+    <input type="radio" id="preferida-portugues" name="disciplinaspreferida" value="Português">
     <label for="preferida-portugues">Português</label><br>
     <input type="radio" id="preferida-fisica" name="disciplinapreferida" value="Física">
     <label for="preferida-fisica">Física</label><br>

@@ -102,9 +102,12 @@
     <div class="tabela">
     
     <tr>
+        
       <th>Disciplinas Cursadas</th>
       <th>Disciplina Preferida</th>
-     </tr>
+     
+    </tr>
+
 
      <td>
             <?php
